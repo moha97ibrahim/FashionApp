@@ -13,6 +13,11 @@
 		EE25922126937927006EEB39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE25922026937927006EEB39 /* Preview Assets.xcassets */; };
 		EE25922C26937927006EEB39 /* Fashion_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25922B26937927006EEB39 /* Fashion_AppTests.swift */; };
 		EE25923726937928006EEB39 /* Fashion_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25923626937928006EEB39 /* Fashion_AppUITests.swift */; };
+		EE83FD6B2694026F00D0EDFD /* FashionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83FD6A2694026F00D0EDFD /* FashionBlock.swift */; };
+		EE83FD722694092B00D0EDFD /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83FD712694092B00D0EDFD /* MovieController.swift */; };
+		EE83FD7A26940D8500D0EDFD /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83FD7926940D8500D0EDFD /* ArtistModel.swift */; };
+		EE83FD8F269431F600D0EDFD /* ArtistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83FD8E269431F600D0EDFD /* ArtistItemView.swift */; };
+		EE83FD9426944B7100D0EDFD /* ArtistProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83FD9326944B7100D0EDFD /* ArtistProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		EE25923226937928006EEB39 /* Fashion AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE25923626937928006EEB39 /* Fashion_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fashion_AppUITests.swift; sourceTree = "<group>"; };
 		EE25923826937928006EEB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE83FD6A2694026F00D0EDFD /* FashionBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionBlock.swift; sourceTree = "<group>"; };
+		EE83FD712694092B00D0EDFD /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		EE83FD7926940D8500D0EDFD /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		EE83FD8E269431F600D0EDFD /* ArtistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistItemView.swift; sourceTree = "<group>"; };
+		EE83FD9326944B7100D0EDFD /* ArtistProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +105,10 @@
 		EE2592182693791D006EEB39 /* Fashion App */ = {
 			isa = PBXGroup;
 			children = (
+				EE83FD70269408DE00D0EDFD /* Controller */,
+				EE83FD6F269408CF00D0EDFD /* Model */,
+				EE25924726937972006EEB39 /* View */,
 				EE2592192693791D006EEB39 /* Fashion_AppApp.swift */,
-				EE25921B2693791D006EEB39 /* ContentView.swift */,
 				EE25921D26937927006EEB39 /* Assets.xcassets */,
 				EE25922226937927006EEB39 /* Info.plist */,
 				EE25921F26937927006EEB39 /* Preview Content */,
@@ -128,6 +140,33 @@
 				EE25923826937928006EEB39 /* Info.plist */,
 			);
 			path = "Fashion AppUITests";
+			sourceTree = "<group>";
+		};
+		EE25924726937972006EEB39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE25921B2693791D006EEB39 /* ContentView.swift */,
+				EE83FD6A2694026F00D0EDFD /* FashionBlock.swift */,
+				EE83FD8E269431F600D0EDFD /* ArtistItemView.swift */,
+				EE83FD9326944B7100D0EDFD /* ArtistProfile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE83FD6F269408CF00D0EDFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE83FD7926940D8500D0EDFD /* ArtistModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE83FD70269408DE00D0EDFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE83FD712694092B00D0EDFD /* MovieController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83FD6B2694026F00D0EDFD /* FashionBlock.swift in Sources */,
+				EE83FD722694092B00D0EDFD /* MovieController.swift in Sources */,
+				EE83FD8F269431F600D0EDFD /* ArtistItemView.swift in Sources */,
 				EE25921C2693791D006EEB39 /* ContentView.swift in Sources */,
 				EE25921A2693791D006EEB39 /* Fashion_AppApp.swift in Sources */,
+				EE83FD7A26940D8500D0EDFD /* ArtistModel.swift in Sources */,
+				EE83FD9426944B7100D0EDFD /* ArtistProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +465,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fashion App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fashion App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +486,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fashion App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fashion App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
