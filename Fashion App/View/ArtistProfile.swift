@@ -18,6 +18,7 @@ struct ArtistProfile: View {
                     VStack{
                         Image(systemName: "text.bubble" )
                             .resizable()
+                            .interpolation(.none)
                             .foregroundColor(.white)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
@@ -25,6 +26,7 @@ struct ArtistProfile: View {
                             .onAppear{
                                 print(item)
                             }
+                            
                         
                         Text("3")
                             .foregroundColor(.white)
@@ -74,9 +76,11 @@ struct ArtistProfile: View {
         .background(
             Image(item.image)
                 .resizable()
-                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/))
+        .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading:
                     Button(action: {
@@ -101,6 +105,8 @@ struct ArtistProfile: View {
                )
 
     }
+    
+    
 }
 
 struct ArtistProfile_Previews: PreviewProvider {
@@ -108,3 +114,4 @@ struct ArtistProfile_Previews: PreviewProvider {
         ArtistProfile(item: ArtistModel(id: UUID(), name: "N/A", city: "N/A", image: "N/A"))
     }
 }
+

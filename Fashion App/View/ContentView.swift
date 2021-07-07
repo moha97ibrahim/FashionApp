@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  Fashion App
@@ -5,6 +6,10 @@
 //  Created by Mohammed Ibrahim on 5/7/21.
 //
 
+
+
+
+ 
 import SwiftUI
 
 struct ContentView: View {
@@ -12,15 +17,9 @@ struct ContentView: View {
 
         ZStack(alignment:.top){
             VStack{
-               
                 FashionBlock()
-
-
             }
-
-        }
-
-        
+        }    
     }
 }
 
@@ -29,4 +28,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
 

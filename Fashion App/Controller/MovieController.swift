@@ -9,19 +9,19 @@ import Foundation
 
 class MovieController : ObservableObject  {
     @Published var modelData  = [ArtistModel(id: UUID(), name: "Kate William", city: "London", image: "pic1"),
-                                 ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic4"),
+                                 ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic5"),
                                  ArtistModel(id: UUID(), name: "Isabelle", city: "Parris", image: "pic2"),
                                  ArtistModel(id: UUID(), name: "Willie", city: "Spain", image: "pic3"),
-                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic5")]
-    @Published var NewData  = [  ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic4"),
-                                 ArtistModel(id: UUID(), name: "Isabelle", city: "Parris", image: "pic2"),
-                                 ArtistModel(id: UUID(), name: "Willie", city: "Spain", image: "pic3"),
-                                 ArtistModel(id: UUID(), name: "Kate William", city: "London", image: "pic1"),
-                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic5")]
-    @Published var Data2021  = [ ArtistModel(id: UUID(), name: "Willie", city: "Spain", image: "pic3"),
-                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic5"),
-                                 ArtistModel(id: UUID(), name: "Kate William", city: "London", image: "pic1"),
-                                 ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic4"),
+                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic4")]
+    @Published var NewData  = [  ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic5"),
+                                 ArtistModel(id: UUID(), name: "Isabelle", city: "Parris", image: "pic1"),
+                                 ArtistModel(id: UUID(), name: "Willie", city: "Spain", image: "pic2"),
+                                 ArtistModel(id: UUID(), name: "Kate William", city: "London", image: "pic3"),
+                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic4")]
+    @Published var Data2021  = [ ArtistModel(id: UUID(), name: "Willie", city: "Spain", image: "pic1"),
+                                 ArtistModel(id: UUID(), name: "Charlotte", city: "Parris", image: "pic2"),
+                                 ArtistModel(id: UUID(), name: "Kate William", city: "London", image: "pic3"),
+                                 ArtistModel(id: UUID(), name: "Jhon", city: "Italy", image: "pic5"),
                                  ArtistModel(id: UUID(), name: "Isabelle", city: "Parris", image: "pic2")
                                  ]
     

@@ -90,7 +90,9 @@ struct FashionBlock: View {
                                             .frame( height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                             .padding(20)
                                     }
+                                    .transition(.opacity)
                                     .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
+                                    
                                     
                                 }
                             }
@@ -98,6 +100,7 @@ struct FashionBlock: View {
                         
                         Image("picland")
                             .resizable()
+                            .interpolation(.none)
                             .frame(height:200)
                             .aspectRatio(contentMode: .fit)
                             .cornerRadius(20)
@@ -124,6 +127,7 @@ struct FashionBlock: View {
                                     .animation(.linear(duration: 1)))
             
         }
+        .animation(.easeIn(duration: 0.6))
         
     }
 }
